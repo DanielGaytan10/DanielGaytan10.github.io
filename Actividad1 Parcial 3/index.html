@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-success text-dark text-center py-3">
+        <h2>Registro</h2>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Registro</h2>
+                        <form id="registerForm" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="regUsername">Usuario:</label>
+                                <input type="text" class="form-control" id="regUsername" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa un nombre de usuario.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="regPassword">Contraseña:</label>
+                                <input type="password" class="form-control" id="regPassword" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa una contraseña.
+                                </div>
+                            </div>
+                            <button type="submit" class="bg-danger btn btn-danger">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Inicio de Sesión</h2>
+                        <form id="loginForm" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="loginUsername">Usuario:</label>
+                                <input type="text" class="form-control" id="loginUsername" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa un nombre de usuario.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Contraseña:</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa una contraseña.
+                                </div>
+                            </div>
+                            <button type="submit" class="bg-danger btn btn-danger">Iniciar Sesión</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-4 mt-5">
+        <p>Contactanos en nuestro correo</p>
+        <p>Contacto: yesyes@gmail.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
